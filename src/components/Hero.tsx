@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
           </div>
           
           <div className="hero-image">
-            <img src="./images/profile-pic.jpg" alt="Profile Picture" className="profile-pic" />
+            <img src="./images/profile-pic.jpg" alt="Abhilash Hamsa" className="profile-pic" />
           </div>
         </div>
       </div>
