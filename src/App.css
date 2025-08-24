@@ -40,7 +40,6 @@ body {
     border-bottom: 1px solid #e2e8f0;
 }
 
-/* Make the change more visible for testing */
 .navbar.scrolled .nav-name {
     color: #2563eb;
 }
@@ -132,8 +131,6 @@ body {
     color: #1e293b;
 }
 
-
-
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -152,7 +149,7 @@ body {
 .hero {
     padding: 8rem 0 6rem 0;
     background: #ffffff;
-    min-height: 100vh;
+  min-height: 100vh;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #e2e8f0;
@@ -175,7 +172,7 @@ body {
 .hero-name {
     font-size: 3.5rem;
     font-weight: 700;
-    background: linear-gradient(135deg,  #60a5fa 0%, #3b82f6 30%,#1e40af 100%);
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 30%,#1e40af 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -207,16 +204,6 @@ body {
     margin-right: 0.4rem;
 }
 
-.contact-note {
-    color: #64748b;
-    font-size: 0.7rem;
-    background: #f1f5f9;
-    padding: 0.6rem 0.8rem;
-    border-radius: 6px;
-    display: inline-block;
-    margin-top: 0.4rem;
-}
-
 .hero-image {
     position: relative;
 }
@@ -237,31 +224,6 @@ body {
     font-weight: bold;
 }
 
-.edit-camera {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    background-color: white;
-    color: #2563eb;
-    border: none;
-    border-radius: 50%;
-    width: 28px;
-    height: 28px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-}
-
-.edit-camera:hover {
-    background-color: #f8fafc;
-    transform: scale(1.1);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
-
 /* Stats Container within Hero */
 .stats-container {
     display: flex;
@@ -274,7 +236,7 @@ body {
     flex: 1;
     background: #2563eb;
     color: white;
-    padding: 0.4rem 0.9rem;
+    padding: 0.6rem 0.9rem;
     text-align: center;
     box-shadow: 0 6px 15px rgba(37, 99, 235, 0.2);
     transition: all 0.3s ease;
@@ -391,8 +353,8 @@ body {
 }
 
 .projects-grid {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
     gap: 3rem;
 }
 
@@ -480,8 +442,8 @@ body {
     background: linear-gradient(135deg, #059669 0%, #047857 100%);
     border-radius: 12px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
     position: relative;
     overflow: hidden;
 }
@@ -531,7 +493,7 @@ body {
     margin: 0 auto;
 }
 
-.contribution-placeholder {
+.contribution-container {
     background-color: white;
     padding: 2rem;
     border-radius: 16px;
@@ -539,47 +501,16 @@ body {
     text-align: center;
 }
 
-.contribution-months {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 4px;
-    margin-bottom: 1rem;
-    font-size: 0.75rem;
+.github-username {
+    margin-top: 1rem;
     color: #6b7280;
+    font-size: 0.9rem;
 }
 
-.contribution-squares {
-    display: grid;
-    grid-template-columns: repeat(52, 1fr);
-    gap: 2px;
-    margin-bottom: 1rem;
+.github-username span {
+    color: #2563eb;
+    font-weight: 600;
 }
-
-.contribution-legend {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    font-size: 0.75rem;
-    color: #6b7280;
-}
-
-.legend-squares {
-    display: flex;
-    gap: 2px;
-}
-
-.legend-square {
-    width: 12px;
-    height: 12px;
-    border-radius: 2px;
-}
-
-.legend-square.light { background-color: #ebedf0; }
-.legend-square.medium { background-color: #9be9a8; }
-.legend-square.dark { background-color: #216e39; }
-
-
 
 /* Footer */
 .footer {
@@ -664,9 +595,9 @@ body {
     }
     
     .profile-pic {
-        width: 312px;
-        height: 312px;
-        font-size: 6.2rem;
+        width: 240px;
+        height: 240px;
+        font-size: 4.8rem;
     }
     
     .project-content {
@@ -707,8 +638,6 @@ body {
         margin: 0 -15px;
         border-radius: 0;
     }
-    
-
 }
 
 /* Smooth Scrolling */
@@ -718,7 +647,7 @@ html {
 
 /* Loading Animation */
 @keyframes fadeInUp {
-    from {
+  from {
         opacity: 0;
         transform: translateY(30px);
     }

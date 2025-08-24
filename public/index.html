@@ -1,239 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhilash Hamsa - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Abhilash Hamsa - Portfolio showcasing skills, projects, and GitHub contributions"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <title>Abhilash Hamsa - Portfolio</title>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="./images/profile-icon.jpg" alt="Abhilash Hamsa" class="profile-icon">
-                <span class="nav-name">Abhilash Hamsa</span>
-            </div>
-            <div class="nav-links">
-                <a href="#skills" class="nav-link">Skills Acquired</a>
-                <a href="#projects" class="nav-link active">My Projects</a>
-                <a href="#github" class="nav-link">GitHub</a>
-                <a href="#linkedin" class="nav-link"><i class="fab fa-linkedin"></i></a>
-                <a href="#codechef" class="nav-link"><i class="fas fa-code"></i></a>
-            </div>
-
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <p class="hero-greeting">Hi, my name is</p>
-                    <h1 class="hero-name">Abhilash Hamsa</h1>
-                    <p class="hero-bio">
-                        I have built many industry grade projects from scratch and am armed with many technological skills useful for tech projects. Check out my projects below. :)
-                    </p>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +91 8096585052 | <i class="fas fa-envelope"></i> abhilashhamsa9@gmail.com</p>
-                        <!-- <small class="contact-note">Showing contact details will help recruiters to get in touch with you</small> -->
-                    </div>
-                    
-                    <!-- Stats Container -->
-                    <div class="stats-container">
-                        <div class="stat-item">
-                            <h3>7</h3>
-                            <p>VERIFIED SKILLS</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>5</h3>
-                            <p>PROFESSIONAL PROJECTS</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>75+</h3>
-                            <p>DSA PROBLEMS SOLVED</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="./images/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills Acquired</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="skill-icon git">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <span>Git</span>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon linux">
-                        <i class="fab fa-linux"></i>
-                    </div>
-                    <span>Linux</span>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon junit">
-                        <span>JU</span>
-                    </div>
-                    <span>JUnit</span>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon java">
-                        <i class="fab fa-java"></i>
-                    </div>
-                    <span>Java</span>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon jackson">
-                        <span>J</span>
-                    </div>
-                    <span>Jackson</span>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon patterns">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
-                    <span>Design Patterns</span>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-icon sql">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <span>SQL</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-content">
-                        <div class="project-info">
-                            <h3 class="project-title">QContest</h3>
-                            <p class="project-date">Jul 2025</p>
-                            <p class="project-description">
-                                QContest is a robust contest application designed to simulate programming challenges, similar to platforms like Hackerrank. This project aims to develop an application that enables users to participate in and manage coding contests. By focusing on core Java and design principles, developers are tasked with creating a scalable and maintainable contest framework.
-                            </p>
-                            <div class="project-skills">
-                                <span class="skill-tag">Object Oriented Design</span>
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">Unit testing</span>
-                                <span class="skill-tag">Design Patterns</span>
-                                <span class="skill-tag">SOLID Principles</span>
-                                <span class="skill-tag">Exception Handling</span>
-                            </div>
-                            <button class="btn-view-project">View Project Details</button>
-                        </div>
-                        <div class="project-image">
-                            <div class="code-illustration">
-                                <div class="code-lines">
-                                    <div class="code-line"></div>
-                                    <div class="code-line"></div>
-                                    <div class="code-line"></div>
-                                    <div class="code-line"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <div class="project-info">
-                            <h3 class="project-title">QCalc</h3>
-                            <p class="project-date">Jan 2025</p>
-                            <p class="project-description">
-                                This project aims to obtain basic skills in Java and OOPs principles by building a subset of features seen in calculators. During the course of this project: Made use of different features of VSCode IDE to build the project. Built feature of a calculator by following OOPS Principles. Wrote unit tests to ensure edge cases are handled correctly. Fixed the bugs in the implementation of newly introduced features of the calculator.
-                            </p>
-                            <div class="project-skills">
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">Unit testing</span>
-                                <span class="skill-tag">JUnit</span>
-                                <span class="skill-tag">Exception Handling</span>
-                            </div>
-                            <button class="btn-view-project">View Project Details</button>
-                        </div>
-                        <div class="project-image">
-                            <div class="code-illustration">
-                                <div class="code-lines">
-                                    <div class="code-line"></div>
-                                    <div class="code-line"></div>
-                                    <div class="code-line"></div>
-                                    <div class="code-line"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- GitHub Contributions Section -->
-    <section id="github" class="github-contributions">
-        <div class="container">
-            <h2 class="section-title">GitHub Contributions</h2>
-            <div class="contributions-grid">
-                <!-- GitHub contribution grid would go here -->
-                <div class="contribution-placeholder">
-                    <div class="contribution-months">
-                        <span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
-                        <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span>
-                        <span>May</span><span>Jun</span><span>Jul</span><span>Aug</span>
-                    </div>
-                    <div class="contribution-squares">
-                        <!-- Generate contribution squares -->
-                    </div>
-                    <div class="contribution-legend">
-                        <span>Less</span>
-                        <div class="legend-squares">
-                            <div class="legend-square light"></div>
-                            <div class="legend-square medium"></div>
-                            <div class="legend-square dark"></div>
-                        </div>
-                        <span>More</span>
-                    </div>
-                </div>
-            </div>
-    </div>
-    </section>
-
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Abhilash Hamsa. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="#linkedin"><i class="fab fa-linkedin"></i></a>
-                    <a href="#github"><i class="fab fa-github"></i></a>
-                    <a href="#twitter"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
   </body>
 </html>
