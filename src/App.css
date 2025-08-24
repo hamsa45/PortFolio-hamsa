@@ -482,6 +482,229 @@ body {
     50% { opacity: 1; }
 }
 
+/* Achievements Section */
+.achievements {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.achievements-grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.achievement-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.achievement-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.achievement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.achievement-card:hover .achievement-image img {
+    transform: scale(1.05);
+}
+
+.achievement-content {
+    padding: 1.5rem;
+}
+
+.achievement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.achievement-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.achievement-category {
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.achievement-description {
+    color: #64748b;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.achievement-date {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Mobile responsive for achievements */
+@media (max-width: 768px) {
+    .achievements-grid {
+        margin: 2rem 1rem;
+    }
+    
+    .achievement-card {
+        margin: 0;
+    }
+    
+    .achievement-image {
+        height: 250px;
+    }
+    
+    .achievement-title {
+        font-size: 1.3rem;
+    }
+    
+    .achievement-description {
+        font-size: 1rem;
+    }
+    
+    .achievement-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .achievement-category {
+        align-self: flex-start;
+    }
+}
+
+/* Mobile responsive for GitHub contributions */
+@media (max-width: 768px) {
+    .contribution-years {
+        gap: 1.5rem;
+    }
+    
+    .contribution-year {
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+    
+    .year-title {
+        font-size: 1.3rem;
+    }
+    
+    .contribution-image {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .achievements-grid {
+        margin: 2rem 1rem;
+    }
+    
+    .achievement-card {
+        margin: 0;
+    }
+    
+    .achievement-image {
+        height: 250px;
+    }
+    
+    .achievement-title {
+        font-size: 1.3rem;
+    }
+    
+    .achievement-description {
+        font-size: 1rem;
+    }
+    
+    .achievement-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .achievement-category {
+        align-self: flex-start;
+    }
+}
+
+/* Mobile responsive for GitHub contributions */
+@media (max-width: 768px) {
+    .contribution-years {
+        gap: 1.5rem;
+    }
+    
+    .contribution-year {
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+    
+    .year-title {
+        font-size: 1.3rem;
+    }
+    
+    .contribution-image {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .achievements-grid {
+        margin: 2rem 1rem;
+    }
+    
+    .achievement-card {
+        margin: 0;
+    }
+    
+    .achievement-image {
+        height: 250px;
+    }
+    
+    .achievement-title {
+        font-size: 1.3rem;
+    }
+    
+    .achievement-description {
+        font-size: 1rem;
+    }
+    
+    .achievement-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .achievement-category {
+        align-self: flex-start;
+    }
+}
+
 /* GitHub Contributions Section */
 .github-contributions {
     padding: 4rem 0;
@@ -499,6 +722,144 @@ body {
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     text-align: center;
+}
+
+.contribution-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contribution-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.total-contributions {
+    text-align: center;
+}
+
+.total-contributions h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 0.5rem;
+}
+
+.total-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+}
+
+.total-contributions p {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.yearly-breakdown {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.year-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    min-width: 80px;
+}
+
+.year-stat .year {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.year-stat .count {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.contribution-years {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+.contribution-year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.year-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.year-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+}
+
+.year-count {
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.contribution-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contribution-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.contribution-image:hover img {
+    transform: scale(1.02);
 }
 
 .github-username {
@@ -676,4 +1037,56 @@ button:focus,
 a:focus {
     outline: 2px solid #2563eb;
     outline-offset: 2px;
+}
+
+/* Mobile responsive for GitHub contributions */
+@media (max-width: 768px) {
+    .contribution-summary {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .total-number {
+        font-size: 2.5rem;
+    }
+    
+    .yearly-breakdown {
+        gap: 1rem;
+    }
+    
+    .year-stat {
+        min-width: 70px;
+        padding: 0.75rem;
+    }
+    
+    .year-stat .count {
+        font-size: 1.1rem;
+    }
+    
+    .contribution-years {
+        gap: 1.5rem;
+    }
+    
+    .contribution-year {
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+    
+    .year-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    
+    .year-title {
+        font-size: 1.3rem;
+    }
+    
+    .year-count {
+        align-self: flex-start;
+    }
+    
+    .contribution-image {
+        max-width: 100%;
+    }
 }

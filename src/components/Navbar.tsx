@@ -28,6 +28,7 @@ const Navbar: React.FC = () => {
         <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           <a href="#skills" className="nav-link">Skills Acquired</a>
           <a href="#projects" className="nav-link active">My Projects</a>
+          <a href="#achievements" className="nav-link">Achievements</a>
           <a href="#github" className="nav-link">GitHub</a>
           <a href="#linkedin" className="nav-link">
             <i className="fab fa-linkedin"></i>
