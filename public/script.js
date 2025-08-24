@@ -4,12 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
-    const navActions = document.querySelector('.nav-actions');
     
     if (navToggle) {
         navToggle.addEventListener('click', function() {
             navLinks.classList.toggle('active');
-            navActions.classList.toggle('active');
             navToggle.classList.toggle('active');
         });
     }
@@ -39,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Close mobile menu if open
                 if (navLinks.classList.contains('active')) {
                     navLinks.classList.remove('active');
-                    navActions.classList.remove('active');
                     navToggle.classList.remove('active');
                 }
             }
@@ -68,6 +65,42 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     window.addEventListener('scroll', updateActiveNavLink);
+    
+    // Navbar scroll behavior
+    function updateNavbarOnScroll() {
+        const navbar = document.querySelector('.navbar');
+        
+        if (navbar) {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                console.log('Added scrolled class - Scroll Y:', window.scrollY);
+            } else {
+                navbar.classList.remove('scrolled');
+                console.log('Removed scrolled class - Scroll Y:', window.scrollY);
+            }
+        } else {
+            console.error('Navbar element not found!');
+        }
+    }
+    
+    // Call once on load to set initial state
+    updateNavbarOnScroll();
+    
+    // Add scroll event listener with throttling for better performance
+    let ticking = false;
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(updateNavbarOnScroll);
+            ticking = true;
+        }
+    }
+    
+    window.addEventListener('scroll', requestTick);
+    
+    // Debug: Check if navbar exists
+    const navbar = document.querySelector('.navbar');
+    console.log('Navbar found:', navbar);
+    console.log('Initial scroll position:', window.scrollY);
     
     // Typing Effect for Hero Name
     function typeWriter(element, text, speed = 100) {
@@ -163,22 +196,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // CTA Card Click Handlers
-    const ctaCards = document.querySelectorAll('.cta-card');
-    
-    ctaCards.forEach(card => {
-        card.addEventListener('click', function() {
-            // Add demo links functionality
-            if (this.querySelector('h3').textContent.includes('Demo Links')) {
-                alert('Demo links feature coming soon! This would allow you to add live demo links to your projects.');
-            }
-            
-            // Enable private GitHub contributions functionality
-            if (this.querySelector('h3').textContent.includes('Private Github')) {
-                alert('Private GitHub contributions feature coming soon! This would help showcase your private repository contributions.');
-            }
-        });
-    });
+
     
     // View Project Details Button Handlers
     const viewProjectButtons = document.querySelectorAll('.btn-view-project');
@@ -190,38 +208,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Share Button Functionality
-    const shareButton = document.querySelector('.btn-share');
-    if (shareButton) {
-        shareButton.addEventListener('click', function() {
-            if (navigator.share) {
-                navigator.share({
-                    title: 'Abhilash Hamsa - Portfolio',
-                    text: 'Check out my portfolio showcasing my projects and skills!',
-                    url: window.location.href
-                });
-            } else {
-                // Fallback for browsers that don't support Web Share API
-                const url = window.location.href;
-                navigator.clipboard.writeText(url).then(() => {
-                    alert('Portfolio URL copied to clipboard!');
-                });
-            }
-        });
-    }
-    
-    // Preview Button Functionality
-    const previewButton = document.querySelector('.btn-preview');
-    if (previewButton) {
-        previewButton.addEventListener('click', function() {
-            // Toggle preview mode (could be used for different view modes)
-            document.body.classList.toggle('preview-mode');
-            const isPreviewMode = document.body.classList.contains('preview-mode');
-            this.innerHTML = isPreviewMode ? 
-                '<i class="fas fa-eye-slash"></i> Exit Preview' : 
-                '<i class="fas fa-eye"></i> Preview';
-        });
-    }
+
     
     // Generate GitHub Contribution Squares
     function generateContributionSquares() {
