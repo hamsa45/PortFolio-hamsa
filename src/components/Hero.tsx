@@ -14,8 +14,12 @@ const Hero: React.FC = () => {
             
             <div className="contact-info">
               <p>
-                <i className="fas fa-phone"></i> +91 8096585052 | 
-                <i className="fas fa-envelope"></i> abhilashhamsa9@gmail.com
+                <i className="fas fa-phone"></i> +91 8096585052
+                <span className="contact-separator"> | </span>
+                <i className="fas fa-envelope"></i> 
+                <a href="mailto:abhilashhamsa9@gmail.com" className="email-link">
+                  abhilashhamsa9@gmail.com
+                </a>
               </p>
             </div>
             
