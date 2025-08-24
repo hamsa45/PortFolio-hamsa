@@ -33,6 +33,19 @@ const GitHubContributions: React.FC = () => {
             <div className="contribution-placeholder">
               <p>Contributions for <strong>hamsa45</strong></p>
               
+              {/* GitHub Profile Link */}
+              <div className="github-profile-link">
+                <a 
+                  href="https://github.com/hamsa45" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="github-profile-btn"
+                >
+                  <i className="fab fa-github"></i>
+                  View GitHub Profile
+                </a>
+              </div>
+
               {/* Summary Statistics */}
               <div className="contribution-summary">
                 <div className="total-contributions">
