@@ -1,89 +1,271 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhilash Hamsa - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="https://via.placeholder.com/40x40/2563eb/ffffff?text=AH" alt="Abhilash Hamsa" class="profile-icon">
+                <span class="nav-name">Abhilash Hamsa</span>
+            </div>
+            <div class="nav-links">
+                <a href="#skills" class="nav-link">Skills Acquired</a>
+                <a href="#projects" class="nav-link active">My Projects</a>
+                <a href="#github" class="nav-link">GitHub</a>
+                <a href="#linkedin" class="nav-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#codechef" class="nav-link"><i class="fas fa-code"></i></a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-share"><i class="fas fa-share"></i> Share</button>
+                <button class="btn-preview"><i class="fas fa-eye"></i> Preview</button>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.1.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.1.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hi, my name is</p>
+                    <h1 class="hero-name">Abhilash Hamsa</h1>
+                    <p class="hero-bio">
+                        I have built many industry grade projects from scratch and am armed with many technological skills useful for tech projects. Check out my projects below. :)
+                    </p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 918096585052 | <i class="fas fa-envelope"></i> abhilashhamsa9@gmail.com</p>
+                        <small class="contact-note">Showing contact details will help recruiters to get in touch with you</small>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/150x150/2563eb/ffffff?text=AH" alt="Profile Picture" class="profile-pic">
+                    <button class="edit-camera"><i class="fas fa-camera"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>7</h3>
+                    <p>VERIFIED SKILLS</p>
+                </div>
+                <div class="stat-card">
+                    <h3>5</h3>
+                    <p>PROFESSIONAL PROJECTS</p>
+                </div>
+                <div class="stat-card">
+                    <h3>75+</h3>
+                    <p>DSA PROBLEMS SOLVED</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills Acquired</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon git">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <span>Git</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon linux">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <span>Linux</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon junit">
+                        <span>JU</span>
+                    </div>
+                    <span>JUnit</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon java">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <span>Java</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon jackson">
+                        <span>J</span>
+                    </div>
+                    <span>Jackson</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon patterns">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <span>Design Patterns</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon sql">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <span>SQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <h3 class="project-title">QContest</h3>
+                            <p class="project-date">Jul 2025</p>
+                            <p class="project-description">
+                                QContest is a robust contest application designed to simulate programming challenges, similar to platforms like Hackerrank. This project aims to develop an application that enables users to participate in and manage coding contests. By focusing on core Java and design principles, developers are tasked with creating a scalable and maintainable contest framework.
+                            </p>
+                            <div class="project-skills">
+                                <span class="skill-tag">Object Oriented Design</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Unit testing</span>
+                                <span class="skill-tag">Design Patterns</span>
+                                <span class="skill-tag">SOLID Principles</span>
+                                <span class="skill-tag">Exception Handling</span>
+                            </div>
+                            <button class="btn-view-project">View Project Details</button>
+                        </div>
+                        <div class="project-image">
+                            <div class="code-illustration">
+                                <div class="code-lines">
+                                    <div class="code-line"></div>
+                                    <div class="code-line"></div>
+                                    <div class="code-line"></div>
+                                    <div class="code-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <h3 class="project-title">QCalc</h3>
+                            <p class="project-date">Jan 2025</p>
+                            <p class="project-description">
+                                This project aims to obtain basic skills in Java and OOPs principles by building a subset of features seen in calculators. During the course of this project: Made use of different features of VSCode IDE to build the project. Built feature of a calculator by following OOPS Principles. Wrote unit tests to ensure edge cases are handled correctly. Fixed the bugs in the implementation of newly introduced features of the calculator.
+                            </p>
+                            <div class="project-skills">
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Unit testing</span>
+                                <span class="skill-tag">JUnit</span>
+                                <span class="skill-tag">Exception Handling</span>
+                            </div>
+                            <button class="btn-view-project">View Project Details</button>
+                        </div>
+                        <div class="project-image">
+                            <div class="code-illustration">
+                                <div class="code-lines">
+                                    <div class="code-line"></div>
+                                    <div class="code-line"></div>
+                                    <div class="code-line"></div>
+                                    <div class="code-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Contributions Section -->
+    <section id="github" class="github-contributions">
+        <div class="container">
+            <h2 class="section-title">GitHub Contributions</h2>
+            <div class="contributions-grid">
+                <!-- GitHub contribution grid would go here -->
+                <div class="contribution-placeholder">
+                    <div class="contribution-months">
+                        <span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+                        <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span>
+                        <span>May</span><span>Jun</span><span>Jul</span><span>Aug</span>
+                    </div>
+                    <div class="contribution-squares">
+                        <!-- Generate contribution squares -->
+                    </div>
+                    <div class="contribution-legend">
+                        <span>Less</span>
+                        <div class="legend-squares">
+                            <div class="legend-square light"></div>
+                            <div class="legend-square medium"></div>
+                            <div class="legend-square dark"></div>
+                        </div>
+                        <span>More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Cards -->
+    <section class="cta-cards">
+        <div class="container">
+            <div class="cta-grid">
+                <div class="cta-card">
+                    <div class="cta-content">
+                        <h3>Add Demo Links</h3>
+                        <p>Increase your chances of getting shortlisted at interviews with real proof of work. Add demo Link to every project.</p>
+                    </div>
+                    <div class="cta-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="cta-card">
+                    <div class="cta-content">
+                        <h3>Enable Private Github Contribution</h3>
+                        <p>Keep your private contributions enabled to let the viewers see your code commit contributions till now. Read more on how to enable Private Contribution</p>
+                    </div>
+                    <div class="cta-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Abhilash Hamsa. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#github"><i class="fab fa-github"></i></a>
+                    <a href="#twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
